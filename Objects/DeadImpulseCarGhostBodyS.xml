@@ -31,9 +31,9 @@
 				<Integer name="Material Count" value="1" />
 				<String name="Material1" >impulsecar_dead</String>
 				<Vector4 name="Color1" >
-					<Float value="0.300000" />
-					<Float value="0.600000" />
-					<Float value="0.950000" />
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
 					<Float value="3.000000" />
 				</Vector4>
 			</RenderMesh>

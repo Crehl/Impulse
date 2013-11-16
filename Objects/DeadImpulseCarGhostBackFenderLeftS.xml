@@ -28,7 +28,7 @@
 			<RenderMesh version="0" Play="1" Pause="1" DevPause="1" >
 				<String name="Mesh" >DeadCarBackFenderLeft.msh</String>
 				<Integer name="Material Count" value="1" />
-				<String name="Material1" >shockwave</String>
+				<String name="Material1" >impulsecar_dead</String>
 				<Vector4 name="Color1" >
 					<Float value="0.000000" />
 					<Float value="0.700000" />

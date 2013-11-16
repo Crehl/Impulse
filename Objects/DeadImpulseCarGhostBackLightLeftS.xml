@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<GameObjectBlueprints >
+  <GameObjectBlueprint name="DeadImpulseCarGhostBackLeftLightS" >
+    <Components >
+      <Transform version="0" Play="1" Pause="1" DevPause="1" >
+        <Vector3 name="position" >
+          <Float value="-0.618" />
+          <Float value="-1.567" />
+          <Float value="0.021" />
+        </Vector3>
+        <Vector3 name="scale" >
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+        </Vector3>
+        <Matrix3x3 name="orientation" >
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+        </Matrix3x3>
+      </Transform>
+			<RenderMesh version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Mesh" >DeadCarBackLightLeft.msh</String>
+				<Integer name="Material Count" value="1" />
+				<String name="Material1" >shockwave</String>
+				<Vector4 name="Color1" >
+					<Float value="0.200000" />
+					<Float value="0.600000" />
+					<Float value="0.950000" />
+					<Float value="0.250000" />
+				</Vector4>
+			</RenderMesh>
+			<ReplayPlayer version="0" Play="1" Pause="1" DevPause="1" >
+			</ReplayPlayer>
+		</Components>
+  </GameObjectBlueprint>
+</GameObjectBlueprints>

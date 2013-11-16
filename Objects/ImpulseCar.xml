@@ -386,7 +386,7 @@
 			<TrickSystem2 version="0" Play="1" Pause="1" DevPause="1" >
 			</TrickSystem2>
 			<ReplayRecorder version="0" Play="1" Pause="1" DevPause="1" >
-				<String name="Replay Object Name" >CarGhost</String>
+				<String name="Replay Object Name" >ImpulseCarGhost</String>
 			</ReplayRecorder>
 			<TireTrailLogic version="0" Play="1" Pause="1" DevPause="1" >
 			</TireTrailLogic>

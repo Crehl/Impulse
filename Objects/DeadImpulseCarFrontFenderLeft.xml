@@ -105,11 +105,11 @@
 				<Float name="Spawn Frequency" value="100.000000" />
 			</ParticleEmitter>
 			<ReplayRecorder version="0" Play="1" Pause="1" DevPause="1" >
-				<String name="Replay Object Name" >DeadCarGhostFrontFenderLeft</String>
+				<String name="Replay Object Name" >DeadImpulseCarGhostFrontFenderLeft</String>
 			</ReplayRecorder>
 			
 			<NetControllerComponent version="0" Play="1" Pause="1" DevPause="0" >
-				<String name="dummy blueprint" >DeadCarFrontFenderLeft</String>
+				<String name="dummy blueprint" >DeadImpulseCarFrontFenderLeft</String>
 				<Boolean name="initialed object" value="0" />
 			</NetControllerComponent>
 		</Components>

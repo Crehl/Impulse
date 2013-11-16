@@ -1,0 +1,8 @@
+PASS GBufferBoth normmap.fx
+PASS Depth depth.fx
+PASS Shaded phong_ref_pulse.fx
+
+PARAM TEXTURE Diffuse1 impulsecartex.tga
+PARAM TEXTURE Emit1 impulsecaremit.tga
+PARAM TEXTURE Normal1 impulsecarnorm.tga
+PARAM TEXTURE Reflect1 city_ref.tga

@@ -1,0 +1,402 @@
+<?xml version="1.0" ?>
+<GameObjectBlueprints >
+	<GameObjectBlueprint name="ImpulseCar" >
+		<Components >
+			<Transform version="0" Play="1" Pause="1" DevPause="1" >
+				<Vector3 name="position" >
+					<Float value="-100.874001" />
+					<Float value="-136.233994" />
+					<Float value="100.000000" />
+				</Vector3>
+				<Vector3 name="scale" >
+					<Float value="1.000000" />
+					<Float value="1.000000" />
+					<Float value="1.000000" />
+				</Vector3>
+				<Matrix3x3 name="orientation" >
+					<Float value="0.000000" />
+					<Float value="1.000000" />
+					<Float value="0.000000" />
+					<Float value="-1.000000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+					<Float value="1.000000" />
+				</Matrix3x3>
+			</Transform>
+			<RenderMesh version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Mesh" >NewCar.msh</String>
+				<Integer name="Material Count" value="1" />
+				<String name="Material1" >impulsecar</String>
+				<Vector4 name="Color1" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="3.000000" />
+				</Vector4>
+				<Vector4 name="Color2" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="3.000000" />
+				</Vector4>
+				<Float name="Float1" value="0.000000" />
+				<Float name="Float2" value="0.050000" />
+				<Float name="Float3" value="3.000000" />
+			</RenderMesh>
+			<Light version="1" Play="1" Pause="1" DevPause="1" >
+				<Vector4 name="Color" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="1.500000" />
+				</Vector4>
+				<Float name="Specular Strength" value="0.900000" />
+				<Float name="Ambient Strength" value="0.100000" />
+				<Float name="Attenuation Near" value="2.000000" />
+				<Float name="Attenuation Far" value="9.000000" />
+				<Integer name="Type" value="0" />
+			</Light>
+			<ColliderConvexMesh version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Material" >Car</String>
+				<String name="File" >CarHull.mdc</String>
+			</ColliderConvexMesh>
+			<BodyRigid version="0" Play="1" Pause="1" DevPause="1" >
+				<Boolean name="Is Kinematic" value="0" />
+				<Vector3 name="Drag" >
+					<Float value="0.400000" />
+					<Float value="0.020000" />
+					<Float value="0.005000" />
+				</Vector3>
+				<Float name="Rotational Factor" value="0.820000" />
+				<Float name="Inverse Mass" value="1.000000" />
+				<Vector3 name="Center Of Mass" >
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+					<Float value="-0.150000" />
+				</Vector3>
+			</BodyRigid>
+			<ControllerCar version="0" Play="1" Pause="1" DevPause="1" >
+				<Float name="Driving Restitution" value="-0.10000" />
+				<Float name="Rolling Restitution" value="0.000000000001" />
+				<Float name="Driving Friction" value="0.400000" />
+				<Float name="Rolling Friction" value="0.000000000000001" />
+				<Float name="Wheel Friction Side Roll Coefficient" value="0.10000" />
+				<Float name="Wheel Friction Front Roll Coefficient" value="0.3800000" />
+				<Float name="Wheel Radius" value="0.265000" />
+				<Float name="Spring Minimum Length" value="-0.080000" />
+				<Float name="Spring Maximum Length" value="0.200000" />
+				<Float name="Spring Rest Length" value="0.300000" />
+				<Float name="Spring Strength" value="28.000000" />
+				<Float name="Max Spring Force" value="6000.000000" />
+				<Float name="Spring Damping Compression" value="5.300000" />
+				<Float name="Spring Damping Relaxation" value="3.300000" />
+				<Float name="Forward Force Factor" value="22.000000" />
+				<Float name="Reverse Force Factor" value="13.000000" />
+				<Wheels name="Wheels" >
+					<Wheel >
+						<Boolean name="Can Steer" value="1" />
+						<Boolean name="Is Drive Wheel" value="1" />
+						<Float name="Steer Factor" value="0.450000" />
+						<Vector3 name="Pos" >
+							<Float value="-0.718000" />
+							<Float value="1.027000" />
+							<Float value="-0.243000" />
+						</Vector3>
+						<Float name="Brake Strength" value="0.004000" />
+						<Float name="Max Brake Strength" value="0.100000" />
+						<Float name="Front Static Friction Coefficient" value="4.000000" />
+						<Float name="Front Kinetic Friction Coefficient" value="3.500000" />
+						<Float name="Side Static Friction Coefficient" value="5.000000" />
+						<Float name="Side Kinetic Friction Coefficient" value="4.800000" />
+					</Wheel>
+					<Wheel >
+						<Boolean name="Can Steer" value="1" />
+						<Boolean name="Is Drive Wheel" value="1" />
+						<Float name="Steer Factor" value="0.450000" />
+						<Vector3 name="Pos" >
+							<Float value="0.718000" />
+							<Float value="1.027000" />
+							<Float value="-0.243000" />
+						</Vector3>
+						<Float name="Brake Strength" value="0.004000" />
+						<Float name="Max Brake Strength" value="0.100000" />
+						<Float name="Front Static Friction Coefficient" value="4.000000" />
+						<Float name="Front Kinetic Friction Coefficient" value="3.500000" />
+						<Float name="Side Static Friction Coefficient" value="5.000000" />
+						<Float name="Side Kinetic Friction Coefficient" value="4.800000" />
+					</Wheel>
+					<Wheel >
+						<Boolean name="Can Steer" value="0" />
+						<Boolean name="Is Drive Wheel" value="0" />
+						<Float name="Steer Factor" value="0.000000" />
+						<Vector3 name="Pos" >
+							<Float value="-0.679000" />
+							<Float value="-1.173000" />
+							<Float value="-0.243000" />
+						</Vector3>
+						<Float name="Brake Strength" value="0.016000" />
+						<Float name="Max Brake Strength" value="0.400000" />
+						<Float name="Front Static Friction Coefficient" value="4.000000" />
+						<Float name="Front Kinetic Friction Coefficient" value="3.500000" />
+						<Float name="Side Static Friction Coefficient" value="5.000000" />
+						<Float name="Side Kinetic Friction Coefficient" value="4.800000" />
+					</Wheel>
+					<Wheel >
+						<Boolean name="Can Steer" value="0" />
+						<Boolean name="Is Drive Wheel" value="0" />
+						<Float name="Steer Factor" value="0.000000" />
+						<Vector3 name="Pos" >
+							<Float value="0.679000" />
+							<Float value="-1.173000" />
+							<Float value="-0.243000" />
+						</Vector3>
+						<Float name="Brake Strength" value="0.016000" />
+						<Float name="Max Brake Strength" value="0.400000" />
+						<Float name="Front Static Friction Coefficient" value="4.000000" />
+						<Float name="Front Kinetic Friction Coefficient" value="3.500000" />
+						<Float name="Side Static Friction Coefficient" value="5.000000" />
+						<Float name="Side Kinetic Friction Coefficient" value="4.800000" />
+					</Wheel>
+				</Wheels>
+			</ControllerCar>
+			<ControllerWings version="0" Play="1" Pause="1" DevPause="1" >
+				<Float name="Wing Pitch Speed" value="12.000000" />
+				<Float name="Wing Roll Speed" value="12.000000" />
+				<Float name="Wing Yaw Speed" value="10.000000" />
+			</ControllerWings>
+			<CollisionInfoCollector version="0" Play="1" Pause="1" DevPause="1" >
+			</CollisionInfoCollector>
+			<CarWheelLogic version="0" Play="1" Pause="1" DevPause="1" >
+				<Wheels name="Wheels" >
+					<Wheel >
+						<Boolean name="Flip Wheel" value="0" />
+						<String name="Model Name" >ImpulseCarTireBack</String>
+					</Wheel>
+					<Wheel >
+						<Boolean name="Flip Wheel" value="1" />
+						<String name="Model Name" >ImpulseCarTireBack</String>
+					</Wheel>
+					<Wheel >
+						<Boolean name="Flip Wheel" value="0" />
+						<String name="Model Name" >ImpulseCarTireBack</String>
+					</Wheel>
+					<Wheel >
+						<Boolean name="Flip Wheel" value="1" />
+						<String name="Model Name" >ImpulseCarTireBack</String>
+					</Wheel>
+				</Wheels>
+			</CarWheelLogic>
+			<CarLogic version="0" Play="1" Pause="0" DevPause="1" >
+				<Float name="Jump Impulse" value="25.000000" />
+				<Float name="Maximum Jump Velocity" value="100.000000" />
+				<Float name="Brake Time" value="0.200000" />
+				<Float name="Steer Reduction Start Velocity" value="44.000000" />
+				<Float name="Steer Reduction Factor" value="0.100000" />
+				<Float name="Boost Force" value="10.000000" />
+				<Float name="Explode Shake Amount" value="0.100" />
+				<Float name="Crash Shake Mult" value="0.050" />
+				<Float name="Crash Shake Max" value="0.10" />
+				<String name="Play Engine Sound Event Name" >Play_CarEngine</String>
+				<String name="Stop Engine Sound Event Name" >Stop_CarEngine</String>
+				<Integer name="Number Of Back Lights" value="2" />
+				<Vector3 name="Back Light Position" >
+					<Float value="-0.6" />
+					<Float value="-1.75" />
+					<Float value="0.125" />
+				</Vector3>
+				<Vector3 name="Back Light Position" >
+					<Float value="0.6" />
+					<Float value="-1.75" />
+					<Float value="0.125" />
+				</Vector3>
+				<Vector3 name="BumperCamPos_" >
+					<Float value="0.0" />
+					<Float value="1.0" />
+					<Float value="0.35" />
+				</Vector3>
+				<String name="Explosion Object Name" >splosion</String>
+				<String name="Dead Car Body Name" >DeadImpulseCarBody</String>
+				
+				<Integer name="Number Of Dead Gibs" value="12" />
+				<String name="Dead Car Gib Name" >DeadImpulseCarBack</String>
+				<String name="Dead Car Gib Name" >DeadImpulseCarBackFenderLeft</String>
+				<String name="Dead Car Gib Name" >DeadImpulseCarBackFenderRight</String>
+				<String name="Dead Car Gib Name" >DeadImpulseCarBackLightLeft</String>
+				<String name="Dead Car Gib Name" >DeadImpulseCarBackLightRight</String>
+				<String name="Dead Car Gib Name" >DeadImpulseCarFront</String>
+				<String name="Dead Car Gib Name" >DeadImpulseCarFrontFenderLeft</String>
+				<String name="Dead Car Gib Name" >DeadImpulseCarFrontFenderRight</String>
+				<String name="Dead Car Gib Name" >DeadImpulseCarFrontLightLeft</String>
+				<String name="Dead Car Gib Name" >DeadImpulseCarFrontLightRight</String>
+				<String name="Dead Car Gib Name" >DeadImpulseCarWingLeft</String>
+				<String name="Dead Car Gib Name" >DeadImpulseCarWingRight</String>
+				
+				<String name="Dead Tires Name" >ImpulseCarTire</String>
+				<String name="Boosters Empty Name" >CarBoostersEmpty</String>
+				<String name="Wings Empty Name" >CarWingsEmpty</String>
+				<String name="Jets Empty" >CarJetsEmpty</String>
+				<Jets name="Jets" >
+					<Jet>
+						<Boolean name="Is Back" value="1" />
+						<Boolean name="Is Front" value="0" />
+						<Boolean name="Is Left" value="0" />
+						<Boolean name="Is Right" value="0" />
+						<String name="Name" >ImpulseCarRearJet</String>
+					</Jet>
+					<Jet>
+						<Boolean name="Is Back" value="0" />
+						<Boolean name="Is Front" value="1" />
+						<Boolean name="Is Left" value="0" />
+						<Boolean name="Is Right" value="0" />
+						<String name="Name" >ImpulseCarFrontJet</String>
+					</Jet>
+					<Jet>
+						<Boolean name="Is Back" value="0" />
+						<Boolean name="Is Front" value="0" />
+						<Boolean name="Is Left" value="1" />
+						<Boolean name="Is Right" value="0" />
+						<String name="Name" >ImpulseCarLeftJet</String>
+					</Jet>
+					<Jet>
+						<Boolean name="Is Back" value="0" />
+						<Boolean name="Is Front" value="0" />
+						<Boolean name="Is Left" value="0" />
+						<Boolean name="Is Right" value="1" />
+						<String name="Name" >ImpulseCarRightJet</String>
+					</Jet>
+				</Jets>
+				<Children name="Children">
+					<Child>
+						<Integer name="Child Of Type" value="1" />
+						<String name="Name" >ImpulseCarWingDoorLeftUpper</String>
+					</Child>
+					<Child>
+						<Integer name="Child Of Type" value="1" />
+						<String name="Name" >ImpulseCarWingDoorLeftLower</String>
+					</Child>
+					<Child>
+						<Integer name="Child Of Type" value="1" />
+						<String name="Name" >ImpulseCarWingLeftInner</String>
+						<ChildNames>
+							<String>ImpulseCarWingLeftOuter</String>
+						</ChildNames>
+					</Child>
+					<Child>
+						<Integer name="Child Of Type" value="1" />
+						<String name="Name" >ImpulseCarRearWingLeft</String>
+					</Child>
+					<Child>
+						<Integer name="Child Of Type" value="1" />
+						<String name="Name" >ImpulseCarWingDoorRightUpper</String>
+					</Child>
+					<Child>
+						<Integer name="Child Of Type" value="1" />
+						<String name="Name" >ImpulseCarWingDoorRightLower</String>
+					</Child>
+					<Child>
+						<Integer name="Child Of Type" value="1" />
+						<String name="Name" >ImpulseCarWingRightInner</String>
+						<ChildNames>
+							<String name="Child Name0" >ImpulseCarWingRightOuter</String>
+						</ChildNames>
+					</Child>
+					<Child>
+						<Integer name="Child Of Type" value="1" />
+						<String name="Name" >ImpulseCarRearWingRight</String>
+					</Child>
+					<Child>
+						<Integer name="Child Of Type" value="0" />
+						<String name="Name" >ImpulseCarBackDoorUpper</String>
+					</Child>
+					<Child>
+						<Integer name="Child Of Type" value="0" />
+						<String name="Name" >ImpulseCarBackDoorLower</String>
+					</Child>
+				</Children>
+				<String name="Booster Name" >ImpulseCarBoosters</String>
+				<Vector3 name="Right Head Light Offset" >
+					<Float value="0.584" />
+					<Float value="1.463" />
+					<Float value="-0.213" />
+				</Vector3>
+				<Vector3 name="Right Tube Light Offset" >
+					<Float value="0.656" />
+					<Float value="-0.073" />
+					<Float value="-0.390" />
+				</Vector3>
+				<String name="Jump Shockwave Object Name" >JumpShockwave</String>
+				<String name="Play Horn Sound Event Name" >Play_CarHorn</String>
+				<String name="Stop Horn Sound Event Name" >Stop_CarHorn</String>
+				<String name="Ghost Dummy Object Name" >ImpulseCarGhostDummy</String>
+				<String name="Wing Left Outer Name" >ImpulseCarWingLeftOuter</String>
+				<String name="Wing Right Outer Name" >ImpulseCarWingRightOuter</String>
+				<Boolean name="Should Pulse Lines" value="1" />
+				<Float name="Added Camera Leash Distance" value="0.0" />
+				<Float name="Tire Slip Amount" value="0.6" />
+				<String name="Intro Car Object Name" >IntroImpulseCar</String>
+				<String name="Intro Camera Object Name" >IntroCamera</String>
+				<String name="Finish Car Object Name" >FinishImpulseCar</String>
+				<Float name="Sticky Wheel Distance" value="0.0" />
+				<Float name="Heat Multiplier" value="2.9" />
+				
+			</CarLogic>
+			<ParticleEmitter version="0" Play="1" Pause="1" DevPause="1" >
+				<Float name="Color Index" value="4.000000" />
+				<Float name="Color Index Randomness" value="0.000000" />
+				<Float name="Color Intensity" value="0.300000" />
+				<Float name="Texture Index" value="13.000000" />
+				<Float name="Texture Index Randomness" value="0.000000" />
+				<Float name="Texture Delta" value="0.000000" />
+				<Float name="Size Intensity" value="0.200000" />
+				<Float name="Size Randomness" value="0.000000" />
+				<Vector3 name="Position" >
+					<Float value="0.000000" />
+					<Float value="-1.300000" />
+					<Float value="0.000000" />
+				</Vector3>
+				<Vector3 name="Position Randomness" >
+					<Float value="0.000000" />
+					<Float value="0.500000" />
+					<Float value="0.000000" />
+				</Vector3>
+				<Float name="Rotation" value="0.000000" />
+				<Float name="Rotation Randomness" value="0.000000" />
+				<Float name="Delta Rotation" value="0.000000" />
+				<Float name="Rotation Dampening" value="1.000000" />
+				<Vector3 name="Direction" >
+					<Float value="0.000000" />
+					<Float value="-1.000000" />
+					<Float value="0.000000" />
+				</Vector3>
+				<Float name="Angle" value="4.000000" />
+				<Float name="Speed" value="20.000000" />
+				<Float name="Speed Randomness" value="10.000000" />
+				<Float name="Gravity" value="0.000000" />
+				<Float name="Speed Dampening" value="1.000000" />
+				<Float name="Particle Lifetime" value="0.050000" />
+				<Float name="Spawn Frequency" value="800.000000" />
+			</ParticleEmitter>
+			<Phantom version="2" Play="1" Pause="1" DevPause="1" >
+				<String name="Event Name" >Play_CarEngine</String>
+				<Boolean name="Is 3D?" value="1" />
+				<Boolean name="Begin Playing?" value="1" />
+			</Phantom>
+			<TrickSystem2 version="0" Play="1" Pause="1" DevPause="1" >
+			</TrickSystem2>
+			<ReplayRecorder version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Replay Object Name" >CarGhost</String>
+			</ReplayRecorder>
+			<TireTrailLogic version="0" Play="1" Pause="1" DevPause="1" >
+			</TireTrailLogic>
+			<NetControllerComponent version="0" Player="1" Pause="1" DevPause="0" >
+				<String name="dummy blueprint">ImpulseCarNetDummy</String>
+				<Boolean name="initialed object" value="1" />
+			</NetControllerComponent>
+			<SingleName version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Name" >Car</String>
+			</SingleName>
+		</Components>
+	</GameObjectBlueprint>
+</GameObjectBlueprints>

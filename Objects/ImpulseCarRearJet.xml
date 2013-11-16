@@ -1,0 +1,135 @@
+<?xml version="1.0" ?>
+<GameObjectBlueprints >
+	<GameObjectBlueprint name="ImpulseCarRearJet" >
+		<Components >
+			<Transform version="0" Play="1" Pause="1" DevPause="1" >
+				<Vector3 name="position" >
+					<Float value="0.0" />
+					<Float value="-1.126" />
+					<Float value="0.319" />
+				</Vector3>
+				<Vector3 name="scale" >
+					<Float value="1.000000" />
+					<Float value="1.000000" />
+					<Float value="1.000000" />
+				</Vector3>
+				<Matrix3x3 name="orientation" >
+					<Float value="1.0" />
+					<Float value="0.0" />
+					<Float value="0.0" />
+					<Float value="0.0" />
+					<Float value="1.0" />
+					<Float value="0.0" />
+					<Float value="0.0" />
+					<Float value="0.0" />
+					<Float value="1.0" />
+				</Matrix3x3>
+			</Transform>
+			<RenderMesh version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Mesh" >CarRearJet.msh</String>
+				<Integer name="Material Count" value="1" />
+				<String name="Material1" >impulsecar</String>
+				<Vector4 name="Color1" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="3.000000" />
+				</Vector4>
+				<Vector4 name="Color2" >
+					<Float value="1.000000" />
+					<Float value="-1.000000" />
+					<Float value="-1.000000" />
+					<Float value="3.00000" />
+				</Vector4>
+				<Float name="Float1" value="0.000000" />
+				<Float name="Float2" value="0.050000" />
+				<Float name="Float3" value="3.000000" />
+			</RenderMesh>
+			<AnimBasic version="0" Play="1" Pause="1" DevPause="1" >
+				<Float name="Start Time" value="0.000000" />
+				<Float name="End Time" value="0.070000" />
+				<Vector3 name="Delta Scale" >
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+				</Vector3>
+				<Vector3 name="Delta Pos" >
+					<Float value="0.0" />
+					<Float value="0.0" />
+					<Float value="0.0" />
+				</Vector3>
+				<Float name="Delta Rotation" value="-1.211" />
+				<Vector3 name="Rotation Vector" >
+					<Float value="1.0" />
+					<Float value="0.0" />
+					<Float value="0.0" />
+				</Vector3>
+				<Float name="Time Value" value="0.000000" />
+				<Integer name="State" value="3" />
+			</AnimBasic>
+			<FlameLogic version="0" Play="1" Pause="1" DevPause="1" >
+				<Integer name="FlameCount" value="02" />
+				<Vector3 name="Pos01" >
+					<Float value="-0.121985" />
+					<Float value="-0.127355" />
+					<Float value="-0.066203" />
+				</Vector3>
+				<Vector3 name="Scl01" >
+					<Float value="0.252003" />
+					<Float value="0.176539" />
+					<Float value="0.424486" />
+				</Vector3>
+				<Matrix3x3 name="Ori01" >
+					<Float value="0.999058" />
+					<Float value="0.000000" />
+					<Float value="-0.043384" />
+					<Float value="-0.043384" />
+					<Float value="0.000000" />
+					<Float value="-0.999058" />
+					<Float value="-0.000000" />
+					<Float value="1.000000" />
+					<Float value="0.000000" />
+				</Matrix3x3>
+				<Vector3 name="Pos02" >
+					<Float value="0.122000" />
+					<Float value="-0.127355" />
+					<Float value="-0.066203" />
+				</Vector3>
+				<Vector3 name="Scl02" >
+					<Float value="0.252003" />
+					<Float value="0.176539" />
+					<Float value="0.424486" />
+				</Vector3>
+				<Matrix3x3 name="Ori02" >
+					<Float value="0.999059" />
+					<Float value="-0.000000" />
+					<Float value="0.043375" />
+					<Float value="0.043375" />
+					<Float value="0.000000" />
+					<Float value="-0.999059" />
+					<Float value="0.000000" />
+					<Float value="1.000000" />
+					<Float value="0.000000" />
+				</Matrix3x3>
+			</FlameLogic>
+			<Phantom version="2" Play="1" Pause="1" DevPause="1" >
+				<String name="Event Name" >Play_CarJet</String>
+				<Boolean name="Is 3D?" value="1" />
+				<Boolean name="Begin Playing?" value="0" />
+			</Phantom>
+			<Light version="1" Play="1" Pause="1" DevPause="1" >
+				<Vector4 name="Color" >
+					<Float value="0.800000" />
+					<Float value="0.500000" />
+					<Float value="0.100000" />
+					<Float value="0.000000" />
+				</Vector4>
+				<Float name="Specular Strength" value="0.900000" />
+				<Float name="Ambient Strength" value="0.0100000" />
+				<Float name="Attenuation Near" value="1.000000" />
+				<Float name="Attenuation Far" value="4.000000" />
+				<Integer name="Type" value="0" />
+			</Light>
+		</Components>
+	</GameObjectBlueprint>
+</GameObjectBlueprints>

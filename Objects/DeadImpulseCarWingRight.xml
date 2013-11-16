@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<GameObjectBlueprints >
+  <GameObjectBlueprint name="DeadImpulseCarWingRight" >
+    <Components >
+      <Transform version="0" Play="1" Pause="1" DevPause="1" >
+        <Vector3 name="position" >
+          <Float value="0.376" />
+          <Float value="-1.620" />
+          <Float value="0.358" />
+        </Vector3>
+        <Vector3 name="scale" >
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+        </Vector3>
+        <Matrix3x3 name="orientation" >
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+        </Matrix3x3>
+      </Transform>
+
+			<BodyRigid version="0" Play="1" Pause="1" DevPause="1" >
+				<Boolean name="Is Kinematic" value="0" />
+				<Vector3 name="Drag" >
+					<Float value="0.995000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+				</Vector3>
+				<Float name="Rotational Factor" value="0.200000" />
+				<Float name="Inverse Mass" value="20.000000" />
+				<Vector3 name="Center Of Mass" >
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+				</Vector3>
+			</BodyRigid>
+			
+			<ColliderOrientedBox version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Material" >CarGib</String>
+				<Vector3 name="Size" >
+					<Float value="0.368" />
+					<Float value="0.111" />
+					<Float value="0.024" />
+				</Vector3>
+			</ColliderOrientedBox>
+			
+			<RenderMesh version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Mesh" >DeadCarWingRight.msh</String>
+				<Integer name="Material Count" value="1" />
+				<String name="Material1" >impulsecar_dead</String>
+				<Vector4 name="Color1" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="3.000000" />
+				</Vector4>
+			</RenderMesh>
+
+			<TimedDeathLogic version="0" Play="1" Pause="1" DevPause="1" >
+				<Float name="Minimum Time" value="3.000000" />
+				<Float name="Maximum Time" value="4.000000" />
+			</TimedDeathLogic>
+
+			<ParticleEmitter version="0" Play="1" Pause="1" DevPause="1" >
+				<Float name="Color Index" value="8.000000" />
+				<Float name="Color Index Randomness" value="0.000000" />
+				<Float name="Color Intensity" value="0.300000" />
+				<Float name="Texture Index" value="45.000000" />
+				<Float name="Texture Index Randomness" value="0.000000" />
+				<Float name="Texture Delta" value="0.000000" />
+				<Float name="Size Intensity" value="0.450000" />
+				<Float name="Size Randomness" value="0.100000" />
+				<Vector3 name="Position" >
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+				</Vector3>
+				<Vector3 name="Position Randomness" >
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+				</Vector3>
+				<Float name="Rotation" value="0.000000" />
+				<Float name="Rotation Randomness" value="360.000000" />
+				<Float name="Delta Rotation" value="0.000000" />
+				<Float name="Rotation Dampening" value="1.000000" />
+				<Vector3 name="Direction" >
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+				</Vector3>
+				<Float name="Angle" value="14.000000" />
+				<Float name="Speed" value="1.000000" />
+				<Float name="Speed Randomness" value="0.030000" />
+				<Float name="Gravity" value="0.000000" />
+				<Float name="Speed Dampening" value="1.000000" />
+				<Float name="Particle Lifetime" value="3.500000" />
+				<Float name="Spawn Frequency" value="100.000000" />
+			</ParticleEmitter>
+    </Components>
+  </GameObjectBlueprint>
+</GameObjectBlueprints>

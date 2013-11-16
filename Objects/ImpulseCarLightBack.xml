@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<GameObjectBlueprints >
+  <GameObjectBlueprint name="ImpulseCarLightBack" >
+    <Components >
+      <Transform version="0" Play="1" Pause="1" DevPause="1" >
+        <Vector3 name="position" >
+          <Float value="-0.583000" />
+          <Float value="-1.674000" />
+          <Float value="0.124000" />
+        </Vector3>
+        <Vector3 name="scale" >
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+        </Vector3>
+        <Matrix3x3 name="orientation" >
+          <Float value="-1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="-0.104528" />
+          <Float value="0.994522" />
+          <Float value="0.000000" />
+          <Float value="0.994522" />
+          <Float value="0.104528" />
+        </Matrix3x3>
+      </Transform>
+      <Light version="1" Play="1" Pause="1" DevPause="1" >
+        <Vector4 name="Color" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="3.000000" />
+        </Vector4>
+        <Float name="Specular Strength" value="1.900000" />
+        <Float name="Ambient Strength" value="0.100000" />
+        <Float name="Attenuation Near" value="0.300000" />
+        <Float name="Attenuation Far" value="1.200000" />
+        <Integer name="Type" value="0" />
+      </Light>
+    </Components>
+  </GameObjectBlueprint>
+</GameObjectBlueprints>

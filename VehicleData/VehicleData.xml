@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<VehicleDatas>
+	<Vehicle name="Interceptor" >
+		<String name="unlocked_description" >A Top of the Line Antivirus Car</String>
+		<String name="locked_description" >How did you lock this car?</String>
+		
+		<String name="object_file" >Car</String>
+		<String name="unlocked_img_file" >Interceptor.png</String>
+		<String name="locked_img_file" >Interceptor.png</String>
+		
+		<Boolean name="unlocked" value="1" />
+	</Vehicle>
+	<Vehicle name="Avenger" >
+		<String name="unlocked_description" >A Bad Mamba Jamba Van with Flavor</String>
+		<String name="locked_description" >Complete the Story to Unlock</String>
+		
+		<String name="object_file" >Van</String>
+		<String name="unlocked_img_file" >Avenger.png</String>
+		<String name="locked_img_file" >AvengerLocked.png</String>
+		
+		<Boolean name="unlocked" value="1" />
+	</Vehicle>
+	<Vehicle name="Goldenceptor" >
+		<String name="unlocked_description" >A Bling-bling Version of the Interceptor that can't Overheat</String>
+		<String name="locked_description" >Get All the Achievements to Unlock</String>
+
+		<String name="object_file" >Car_Gold</String>
+		<String name="unlocked_img_file" >Goldenceptor.png</String>
+		<String name="locked_img_file" >GoldenceptorLocked.png</String>
+
+		<Boolean name="unlocked" value="1" />
+	</Vehicle>
+	<Vehicle name="Commander" >
+		<String name="unlocked_description" >A Blast from the Past!</String>
+		<String name="locked_description" >Why is this locked?</String>
+
+		<String name="object_file" >Delorean</String>
+		<String name="unlocked_img_file" >Commander.png</String>
+		<String name="locked_img_file" >Commander_Locked.png</String>
+
+		<Boolean name="unlocked" value="1" />
+	</Vehicle>
+	<Vehicle name="Impulse" >
+		<String name="unlocked_description" >Because Interceptor was imperfect</String>
+		<String name="locked_description" >Locked? Impossible. Matrix error occured</String>
+		<String name="object_file" >ImpulseCar</String>
+		<String name="unlocked_img_file" >ImpulseCar.png</String>
+		<String name="locked_img_file" >ImpulseCarLocked.png</String>
+	</Vehicle>
+<!--
+	<Vehicle name="Knight Cycle" >
+		<String name="unlocked_description" >A real fixer-upper!</String>
+		<String name="locked_description" >Why is this locked?</String>
+
+		<String name="object_file" >Cycle</String>
+		<String name="unlocked_img_file" >Commander.png</String>
+		<String name="locked_img_file" >GoldenceptorLocked.png</String>
+
+		<Boolean name="unlocked" value="1" />
+	</Vehicle>
+	-->
+</VehicleDatas>

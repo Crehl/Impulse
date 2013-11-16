@@ -1,0 +1,162 @@
+<?xml version="1.0" ?>
+<GameObjectBlueprints >
+  <GameObjectBlueprint name="FinishImpulseCar" >
+    <Components >
+      <Transform version="0" Play="1" Pause="1" DevPause="1" >
+        <Vector3 name="position" >
+          <Float value="0.000000" />
+          <Float value="-0.082000" />
+          <Float value="0.000000" />
+        </Vector3>
+        <Vector3 name="scale" >
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+        </Vector3>
+        <Matrix3x3 name="orientation" >
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+        </Matrix3x3>
+      </Transform>
+			
+			<RenderMesh version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Mesh" >CarFragment.msh</String>
+				<Integer name="Material Count" value="1" />
+				<String name="Material1" >impulsecar_intro</String>
+				<Vector4 name="Color1" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="3.000000" />
+				</Vector4>
+			</RenderMesh>
+			
+			<Phantom version="2" Play="1" Pause="1" DevPause="1" >
+				<String name="Event Name" >Play_CarEngine</String>
+				<Boolean name="Is 3D?" value="1" />
+				<Boolean name="Begin Playing?" value="0" />
+			</Phantom>
+			<ColliderOrientedBox version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Material" >Metal</String>
+				<Vector3 name="Size" >
+					<Float value="0.811000" />
+					<Float value="1.667000" />
+					<Float value="0.339700" />
+				</Vector3>
+			</ColliderOrientedBox>
+			<BodyRigid version="0" Play="1" Pause="1" DevPause="1" >
+				<Boolean name="Is Kinematic" value="0" />
+				<Vector3 name="Drag" >
+					<Float value="3.000000" />
+					<Float value="2.20000" />
+					<Float value="0.005000" />
+				</Vector3>
+				<Float name="Rotational Factor" value="0.200000" />
+				<Float name="Inverse Mass" value="1.000000" />
+				<Vector3 name="Center Of Mass" >
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+				</Vector3>
+			</BodyRigid>
+			<ReplayRecorder version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Replay Object Name" >ImpulseCarGhost</String>
+			</ReplayRecorder>
+			<IntroCarLogic version="0" Play="1" Pause="0" DevPause="0" >
+			</IntroCarLogic>
+
+			<ControllerCar version="0" Play="1" Pause="1" DevPause="1" >
+				<Float name="Driving Restitution" value="-0.50000" />
+				<Float name="Rolling Restitution" value="0.200000" />
+				<Float name="Driving Friction" value="0.000000" />
+				<Float name="Rolling Friction" value="0.700000" />
+				<Float name="Wheel Friction Side Roll Coefficient" value="0.10000" />
+				<Float name="Wheel Friction Front Roll Coefficient" value="0.3800000" />
+				<Float name="Wheel Radius" value="0.265000" />
+				<Float name="Spring Minimum Length" value="-0.080000" />
+				<Float name="Spring Maximum Length" value="0.200000" />
+				<Float name="Spring Rest Length" value="0.300000" />
+				<Float name="Spring Strength" value="30.000000" />
+				<Float name="Max Spring Force" value="6000.000000" />
+				<Float name="Spring Damping Compression" value="5.300000" />
+				<Float name="Spring Damping Relaxation" value="3.300000" />
+				<Float name="Forward Force Factor" value="20.000000" />
+				<Float name="Reverse Force Factor" value="15.000000" />
+				<Wheels name="Wheels" >
+					<Wheel >
+						<Boolean name="Can Steer" value="0" />
+						<Boolean name="Is Drive Wheel" value="0" />
+						<Float name="Steer Factor" value="0.0" />
+						<Vector3 name="Pos" >
+							<Float value="-0.718000" />
+							<Float value="1.027000" />
+							<Float value="-0.243000" />
+						</Vector3>
+						<Float name="Brake Strength" value="0.004000" />
+						<Float name="Max Brake Strength" value="0.100000" />
+						<Float name="Front Static Friction Coefficient" value="2.500000" />
+						<Float name="Front Kinetic Friction Coefficient" value="2.000000" />
+						<Float name="Side Static Friction Coefficient" value="3.500000" />
+						<Float name="Side Kinetic Friction Coefficient" value="3.300000" />
+					</Wheel>
+					<Wheel >
+						<Boolean name="Can Steer" value="0" />
+						<Boolean name="Is Drive Wheel" value="0" />
+						<Float name="Steer Factor" value="0.0" />
+						<Vector3 name="Pos" >
+							<Float value="0.718000" />
+							<Float value="1.027000" />
+							<Float value="-0.243000" />
+						</Vector3>
+						<Float name="Brake Strength" value="0.004000" />
+						<Float name="Max Brake Strength" value="0.100000" />
+						<Float name="Front Static Friction Coefficient" value="2.500000" />
+						<Float name="Front Kinetic Friction Coefficient" value="2.000000" />
+						<Float name="Side Static Friction Coefficient" value="3.500000" />
+						<Float name="Side Kinetic Friction Coefficient" value="3.300000" />
+					</Wheel>
+					<Wheel >
+						<Boolean name="Can Steer" value="1" />
+						<Boolean name="Is Drive Wheel" value="0" />
+						<Float name="Steer Factor" value="0.000000" />
+						<Vector3 name="Pos" >
+							<Float value="-0.679000" />
+							<Float value="-1.173000" />
+							<Float value="-0.243000" />
+						</Vector3>
+						<Float name="Brake Strength" value="0.016000" />
+						<Float name="Max Brake Strength" value="0.400000" />
+						<Float name="Front Static Friction Coefficient" value="2.500000" />
+						<Float name="Front Kinetic Friction Coefficient" value="2.000000" />
+						<Float name="Side Static Friction Coefficient" value="3.500000" />
+						<Float name="Side Kinetic Friction Coefficient" value="3.300000" />
+					</Wheel>
+					<Wheel >
+						<Boolean name="Can Steer" value="1" />
+						<Boolean name="Is Drive Wheel" value="0" />
+						<Float name="Steer Factor" value="0.000000" />
+						<Vector3 name="Pos" >
+							<Float value="0.679000" />
+							<Float value="-1.173000" />
+							<Float value="-0.243000" />
+						</Vector3>
+						<Float name="Brake Strength" value="0.016000" />
+						<Float name="Max Brake Strength" value="0.400000" />
+						<Float name="Front Static Friction Coefficient" value="2.500000" />
+						<Float name="Front Kinetic Friction Coefficient" value="2.000000" />
+						<Float name="Side Static Friction Coefficient" value="3.500000" />
+						<Float name="Side Kinetic Friction Coefficient" value="3.300000" />
+					</Wheel>
+				</Wheels>
+			</ControllerCar>
+
+		</Components>
+  </GameObjectBlueprint>
+</GameObjectBlueprints>

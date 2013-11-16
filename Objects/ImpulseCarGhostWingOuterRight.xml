@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<GameObjectBlueprints >
+  <GameObjectBlueprint name="ImpulseCarGhostWingOuterRight" >
+    <Components >
+      <Transform version="0" Play="1" Pause="1" DevPause="1" >
+        <Vector3 name="position" >
+          <Float value="0.972880" />
+          <Float value="-0.204673" />
+          <Float value="0.020104" />
+        </Vector3>
+        <Vector3 name="scale" >
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+        </Vector3>
+        <Matrix3x3 name="orientation" >
+          <Float value="1.000000" />
+          <Float value="-0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+          <Float value="-0.000000" />
+          <Float value="-0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+        </Matrix3x3>
+      </Transform>
+			<RenderMesh version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Mesh" >CarWingRightOuter.msh</String>
+				<Integer name="Material Count" value="1" />
+				<String name="Material1" >shockwave</String>
+				<Vector4 name="Color1" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="0.250000" />
+				</Vector4>
+			</RenderMesh>
+      <AnimBasic version="0" Play="1" Pause="1" DevPause="1" >
+        <Float name="Start Time" value="0.400000" />
+        <Float name="End Time" value="0.600000" />
+        <Vector3 name="Delta Scale" >
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+        </Vector3>
+        <Vector3 name="Delta Pos" >
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+        </Vector3>
+        <Float name="Delta Rotation" value="3.141593" />
+        <Vector3 name="Rotation Vector" >
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+        </Vector3>
+        <Float name="Time Value" value="0.000000" />
+        <Integer name="State" value="3" />
+      </AnimBasic>
+    </Components>
+  </GameObjectBlueprint>
+</GameObjectBlueprints>

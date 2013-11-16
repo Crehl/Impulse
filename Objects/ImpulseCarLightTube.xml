@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<GameObjectBlueprints >
+  <GameObjectBlueprint name="ImpulseCarLightTube" >
+    <Components >
+      <Transform version="0" Play="1" Pause="1" DevPause="1" >
+        <Vector3 name="position" >
+          <Float value="-0.656000" />
+          <Float value="-0.073000" />
+          <Float value="-0.390000" />
+        </Vector3>
+        <Vector3 name="scale" >
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+        </Vector3>
+        <Matrix3x3 name="orientation" >
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+        </Matrix3x3>
+      </Transform>
+      <Light version="1" Play="1" Pause="1" DevPause="1" >
+        <Vector4 name="Color" >
+				<Float value="0.000000" />
+				<Float value="0.700000" />
+				<Float value="0.000000" />
+				<Float value="2.000000" />
+        </Vector4>
+        <Float name="Specular Strength" value="0.900000" />
+        <Float name="Ambient Strength" value="0.010000" />
+        <Float name="Attenuation Near" value="0.500000" />
+        <Float name="Attenuation Far" value="2.000000" />
+        <Integer name="Type" value="3" />
+        <Float name="Tube Length" value="0.643000" />
+      </Light>
+    </Components>
+  </GameObjectBlueprint>
+</GameObjectBlueprints>

@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<GameObjectBlueprints >
+  <GameObjectBlueprint name="ImpulseCarNetDummy" >
+    <Components >
+      <Transform version="0" Play="1" Pause="1" DevPause="1" >
+        <Vector3 name="position" >
+          <Float value="-100.874001" />
+          <Float value="-136.233994" />
+          <Float value="1.000000" />
+        </Vector3>
+        <Vector3 name="scale" >
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+        </Vector3>
+        <Matrix3x3 name="orientation" >
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+          <Float value="-1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+        </Matrix3x3>
+      </Transform>
+			<RenderMesh version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Mesh" >car_full_no_wings.msh</String>
+				<Integer name="Material Count" value="1" />
+				<String name="Material1" >impulsecar_dead</String>
+				<Vector4 name="Color1" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="3.000000" />
+				</Vector4>
+			</RenderMesh>
+      <Light version="1" Play="1" Pause="1" DevPause="1" >
+        <Vector4 name="Color" >
+			<Float value="0.000000" />
+			<Float value="0.700000" />
+			<Float value="0.000000" />
+			<Float value="1.500000" />
+        </Vector4>
+        <Float name="Specular Strength" value="0.900000" />
+        <Float name="Ambient Strength" value="0.100000" />
+        <Float name="Attenuation Near" value="2.000000" />
+        <Float name="Attenuation Far" value="9.000000" />
+        <Integer name="Type" value="0" />
+      </Light>
+			<ChildObjectLogic version="0" Play="1" Pause="1" DevPause="1" >
+				<Boolean name="Copy Color" value="1" />
+				<Names name="Names" >
+					<String>ImpulseCarGhostWingInnerLeft</String>
+					<String>ImpulseCarGhostWingInnerRight</String>
+				</Names>
+			</ChildObjectLogic>
+			<AnimBasic version="0" Play="1" Pause="1" DevPause="1" >
+				<Float name="Start Time" value="0.000000" />
+				<Float name="End Time" value="0.600000" />
+				<Vector3 name="Delta Scale" >
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+				</Vector3>
+				<Vector3 name="Delta Pos" >
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+				</Vector3>
+				<Float name="Delta Rotation" value="0.000000" />
+				<Vector3 name="Rotation Vector" >
+					<Float value="1.000000" />
+					<Float value="0.000000" />
+					<Float value="0.000000" />
+				</Vector3>
+				<Float name="Time Value" value="0.000000" />
+				<Integer name="State" value="2" />
+			</AnimBasic>
+			<PlayerName version="0" Play="1" Pause="1" DevPause="1" >
+				<Float name="Near Opacity" value="0.8" />
+				<Float name="Far Opacity" value="0.7" />
+				<Float name="Near Scale" value="4000.000000" />
+				<Float name="Far Scale" value="5000.000000" />
+				<Float name="Min Scale" value="100.000000" />
+				<Float name="Max Scale" value="500.000000" />
+				<Float name="Near Distance" value="10.000000" />
+				<Float name="Far Distance" value="150.000000" />
+				<Float name="Min Distance" value="1.000000" />
+				<Float name="Max Distance" value="300.000000" />
+			</PlayerName>
+			<ProximityCarCooler version="0" Play="1" Pause="0" DevPause="0" >
+			</ProximityCarCooler>
+    </Components>
+  </GameObjectBlueprint>
+</GameObjectBlueprints>

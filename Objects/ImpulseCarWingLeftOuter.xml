@@ -1,0 +1,121 @@
+<?xml version="1.0" ?>
+<GameObjectBlueprints >
+  <GameObjectBlueprint name="ImpulseCarWingLeftOuter" >
+    <Components >
+      <Transform version="0" Play="1" Pause="1" DevPause="1" >
+        <Vector3 name="position" >
+          <Float value="-0.972880" />
+          <Float value="-0.204673" />
+          <Float value="0.020104" />
+        </Vector3>
+        <Vector3 name="scale" >
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+        </Vector3>
+        <Matrix3x3 name="orientation" >
+          <Float value="1.000000" />
+          <Float value="-0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+          <Float value="-0.000000" />
+          <Float value="-0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+        </Matrix3x3>
+      </Transform>
+			<RenderMesh version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Mesh" >CarWingLeftOuter.msh</String>
+				<Integer name="Material Count" value="1" />
+				<String name="Material1" >impulsecar</String>
+				<Vector4 name="Color1" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="3.000000" />
+				</Vector4>
+				<Vector4 name="Color2" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="3.000000" />
+				</Vector4>
+				<Float name="Float1" value="0.000000" />
+				<Float name="Float2" value="0.050000" />
+				<Float name="Float3" value="3.000000" />
+			</RenderMesh>
+      <AnimBasic version="0" Play="1" Pause="1" DevPause="1" >
+        <Float name="Start Time" value="0.400000" />
+        <Float name="End Time" value="0.600000" />
+        <Vector3 name="Delta Scale" >
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+        </Vector3>
+        <Vector3 name="Delta Pos" >
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+        </Vector3>
+        <Float name="Delta Rotation" value="-3.141593" />
+        <Vector3 name="Rotation Vector" >
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+        </Vector3>
+        <Float name="Time Value" value="0.000000" />
+        <Integer name="State" value="3" />
+      </AnimBasic>
+      <ParticleEmitter version="0" Play="1" Pause="1" DevPause="1" >
+        <Float name="Color Index" value="5.000000" />
+        <Float name="Color Index Randomness" value="0.000000" />
+        <Float name="Color Intensity" value="0.800000" />
+        <Float name="Texture Index" value="55.000000" />
+        <Float name="Texture Index Randomness" value="0.000000" />
+        <Float name="Texture Delta" value="2.000000" />
+        <Float name="Size Intensity" value="0.060000" />
+        <Float name="Size Randomness" value="0.000000" />
+        <Vector3 name="Position" >
+          <Float value="0.300000" />
+          <Float value="-0.400000" />
+          <Float value="0.000000" />
+        </Vector3>
+        <Vector3 name="Position Randomness" >
+          <Float value="0.500000" />
+          <Float value="0.200000" />
+          <Float value="0.000000" />
+        </Vector3>
+        <Float name="Rotation" value="0.000000" />
+        <Float name="Rotation Randomness" value="360.000000" />
+        <Float name="Delta Rotation" value="0.000000" />
+        <Float name="Rotation Dampening" value="1.000000" />
+        <Vector3 name="Direction" >
+          <Float value="0.000000" />
+          <Float value="-1.000000" />
+          <Float value="0.000000" />
+        </Vector3>
+        <Float name="Angle" value="14.000000" />
+        <Float name="Speed" value="0.000000" />
+        <Float name="Speed Randomness" value="0.000000" />
+        <Float name="Gravity" value="0.000000" />
+        <Float name="Speed Dampening" value="1.000000" />
+        <Float name="Particle Lifetime" value="0.500000" />
+        <Float name="Spawn Frequency" value="160.000000" />
+      </ParticleEmitter>
+	  <Light version="1" Play="1" Pause="1" DevPause="1" >
+        <Vector4 name="Color" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="1.000000" />
+        </Vector4>
+        <Float name="Specular Strength" value="0.900000" />
+        <Float name="Ambient Strength" value="0.025000" />
+        <Float name="Attenuation Near" value="0.500000" />
+        <Float name="Attenuation Far" value="5.000000" />
+        <Integer name="Type" value="0" />
+      </Light>
+    </Components>
+  </GameObjectBlueprint>
+</GameObjectBlueprints>

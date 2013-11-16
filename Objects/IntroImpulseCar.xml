@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<GameObjectBlueprints >
+  <GameObjectBlueprint name="IntroImpulseCar" >
+    <Components >
+      <Transform version="0" Play="1" Pause="1" DevPause="1" >
+        <Vector3 name="position" >
+          <Float value="0.000000" />
+          <Float value="-0.082000" />
+          <Float value="0.000000" />
+        </Vector3>
+        <Vector3 name="scale" >
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+        </Vector3>
+        <Matrix3x3 name="orientation" >
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+        </Matrix3x3>
+      </Transform>
+			<RenderMesh version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Mesh" >CarFragment.msh</String>
+				<Integer name="Material Count" value="1" />
+				<String name="Material1" >impulsecar_intro</String>
+				<Vector4 name="Color1" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="3.000000" />
+				</Vector4>
+			</RenderMesh>
+			
+			<Phantom version="2" Play="1" Pause="1" DevPause="1" >
+				<String name="Event Name" >Play_CarEngine</String>
+				<Boolean name="Is 3D?" value="1" />
+				<Boolean name="Begin Playing?" value="0" />
+			</Phantom>
+      <SingleName version="0" Play="1" Pause="1" DevPause="1" >
+        <String name="Name" >IntroImpulseCar</String>
+      </SingleName>
+			<IntroCarLogic version="0" Play="1" Pause="0" DevPause="0" >
+			</IntroCarLogic>
+    </Components>
+  </GameObjectBlueprint>
+</GameObjectBlueprints>

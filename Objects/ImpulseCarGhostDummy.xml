@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<GameObjectBlueprints >
+  <GameObjectBlueprint name="ImpulseCarGhostDummy" >
+    <Components >
+      <Transform version="0" Play="1" Pause="1" DevPause="1" >
+        <Vector3 name="position" >
+          <Float value="-100.874001" />
+          <Float value="-136.233994" />
+          <Float value="1.000000" />
+        </Vector3>
+        <Vector3 name="scale" >
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+          <Float value="1.000000" />
+        </Vector3>
+        <Matrix3x3 name="orientation" >
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+          <Float value="0.000000" />
+          <Float value="-1.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="0.000000" />
+          <Float value="1.000000" />
+        </Matrix3x3>
+      </Transform>
+			<RenderMesh version="0" Play="1" Pause="1" DevPause="1" >
+				<String name="Mesh" >car_full_no_wings.msh</String>
+				<Integer name="Material Count" value="1" />
+				<String name="Material1" >shockwave</String>
+				<Vector4 name="Color1" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="3.000000" />
+				</Vector4>
+			</RenderMesh>
+      <Light version="1" Play="1" Pause="1" DevPause="1" >
+        <Vector4 name="Color" >
+					<Float value="0.000000" />
+					<Float value="0.700000" />
+					<Float value="0.000000" />
+					<Float value="1.500000" />
+        </Vector4>
+        <Float name="Specular Strength" value="0.900000" />
+        <Float name="Ambient Strength" value="0.100000" />
+        <Float name="Attenuation Near" value="2.000000" />
+        <Float name="Attenuation Far" value="9.000000" />
+        <Integer name="Type" value="0" />
+      </Light>
+    </Components>
+  </GameObjectBlueprint>
+</GameObjectBlueprints>
